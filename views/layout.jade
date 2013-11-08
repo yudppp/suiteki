@@ -1,0 +1,24 @@
+doctype 5
+html
+  head
+    title= title
+    meta(name='viewport',content='width=320,initial-scale=1.0,user-scalable=no')
+    meta(name="apple-mobile-web-app-capable",content="yes")
+    link(rel="apple-touch-icon-precomposed",href="/icon/icon.png")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/loader.css')
+    link(rel='stylesheet', href='/stylesheets/animate.css')
+    script(src='/lib/chikuwa.min.js')
+    script(src='/lib/chikuwa-view.js')
+    script(src='/lib/chikuwa-dispatcher.js')
+    script(src='/lib/gShake.js')
+    script(src='/socket.io/socket.io.js')
+    script(src='/lib/underscore-min.js')
+    script(src='/js/noScroll.js')
+    script(src='/js/loader.js')
+    script(src='/js/game.js')
+    script(src='/js/top.js')
+    script(src='/js/room.js')
+    script(src='/js/routes.js')
+  body
+    block content

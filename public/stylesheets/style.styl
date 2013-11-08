@@ -1,0 +1,101 @@
+$main_color= #16A6B6
+$sub_color= #EE6557
+
+body
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  margin: 0px;
+  padding: 0px;
+  height: 0px;
+  width: 100%;
+  background-image: linear-gradient(
+    -45deg,
+    #fff 25%,
+    #dfdfdf 25%, #dfdfdf 50%,
+    #fff 50%, #fff 75%,
+    #dfdfdf 75%, #dfdfdf
+  );
+  background-size: 8px 8px;
+a
+  color: #00B7FF
+.loader
+  background-color: rgba(150,230,230,0.3);
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  line-height: 320px;
+  position: absolute
+  top: 60px
+
+.container
+  width: 100%;
+  height: 500px;
+
+.btn
+  width: 200px
+  height: 60px
+  margin-top: 5px
+  margin-bottom: 10px
+  margin-left: auto
+  margin-right: auto
+  pading: 5px
+  text-align: center
+  line-height: 60px
+  font-size: 20px;
+  color: white
+  background-color: $main_color
+  &.info
+    color: $main_color
+    background-color: white
+  &.sub
+    background-color: $sub_color
+    width: 80px
+    height: 40px
+    float: right
+    margin: 15px
+    line-height: 40px
+    &.hide
+      background-color: rgba(121, 149, 160, 0.6)
+      -webkit-transition: background-color 1s ease-in 0
+      -moz-transition: background-color 1s ease-in 0
+   &.isPresed
+      background-color: rgba(121, 149, 160, 0.8)
+
+
+header
+  width: 100%;
+  height: 60px
+  background-color: $sub_color
+footer
+  position: absolute;
+  top: 480px
+  width: 100%;
+  height: 70px
+  background-color: $main_color
+
+.obj
+  position: absolute;
+  top: 60px;
+  img
+    width: 50px
+    height: 50px
+  &.down
+    top: 480px;
+  &.fast
+    -webkit-transition: top 2s ease-in 0
+    -moz-transition: top 2s ease-in 0
+  &.nomal
+    -webkit-transition: top 3s ease-in 0
+    -moz-transition: top 3s ease-in 0
+  &.slow
+    -webkit-transition: top 4s ease-in 0
+    -moz-transition: top 4s ease-in 0
+
+.life
+  float: left;
+  img
+    width: 30px
+    height: 30px
+    margin: 15px 5px;
+
+#wait,#start
+  margin-top: 100%;
